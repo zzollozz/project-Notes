@@ -1,0 +1,16 @@
+[
+  {
+    "password": "testq232wqwqwqw1",
+    "username": "oneUser",
+    "first_name": "firstnameA",
+    "last_name": "lastnameA",
+    "email": "oneUser@localhost.net"
+  },
+  {
+    "password": "testsd1213sadasada",
+    "username": "twoUser",
+    "first_name": "firstnameB",
+    "last_name": "lastnameB",
+    "email": "twoUser@localhost.net"
+  }
+]
