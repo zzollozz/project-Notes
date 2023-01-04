@@ -1,16 +1,23 @@
 [
   {
-    "password": "testq232wqwqwqw1",
+    "password": "qwerty1111",
     "username": "oneUser",
     "first_name": "firstnameA",
     "last_name": "lastnameA",
     "email": "oneUser@localhost.net"
   },
   {
-    "password": "testsd1213sadasada",
+    "password": "qwerty2222",
     "username": "twoUser",
     "first_name": "firstnameB",
     "last_name": "lastnameB",
     "email": "twoUser@localhost.net"
+  },
+  {
+    "password": "qwerty3333",
+    "username": "threeUser",
+    "first_name": "firstnameC",
+    "last_name": "lastnameC",
+    "email": "threeUser@localhost.net"
   }
 ]
