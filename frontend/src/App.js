@@ -25,7 +25,7 @@ class App extends React.Component {
                     'users': users
                 })
             }
-        ).catch(error => console.log(error)) // <== Иначе вывести ОШИТКУ в Консоль
+        ).catch(error => console.log("О Ш И Б К А ===>> " + error)) // <== Иначе вывести ОШИТКУ в Консоль
 
     }
 

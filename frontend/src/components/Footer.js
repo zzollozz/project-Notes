@@ -3,12 +3,12 @@ import React from "react";
 
 const FooterList = ({}) => {
     return(
-        <table>
-            <th>
-                GB react 2022 г.
-            </th>
+        <div>
+            <p>
+                GB React 2022 г.
+            </p>
 
-        </table>
+        </div>
     )
 }
 
