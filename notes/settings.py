@@ -30,13 +30,6 @@ ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3001',
-    'http://127.0.0.1:3001',
-    'http://localhost:3000 ',
-    'http://127.0.0.1:3000',
-]
-
 CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
@@ -69,6 +62,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders', # Добавил corsheaders
     'authapp',
+    'mainapp',
 
 ]
 
@@ -158,3 +152,36 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # auth Model
 AUTH_USER_MODEL = 'authapp.MyUser'
+
+# ********  Settings Rest Framework  ********** #
+
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_RENDERER_CLASSES': [
+#         'rest_framework.renderers.JSONRenderer',
+#         'rest_framework.renderers.BrowsableAPIRenderer',
+#     ]
+# }
+REST_FRAMEWORK = {
+
+    'DEFAULT_RENDERER_CLASSES': (
+        'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
+        'djangorestframework_camel_case.render.CamelCaseBrowsableAPIRenderer',
+        # Any other renders
+    ),
+
+    'DEFAULT_PARSER_CLASSES': (
+        # If you use MultiPartFormParser or FormParser, we also have a camel case version
+        'djangorestframework_camel_case.parser.CamelCaseFormParser',
+        'djangorestframework_camel_case.parser.CamelCaseMultiPartParser',
+        'djangorestframework_camel_case.parser.CamelCaseJSONParser',
+        # Any other parsers
+    ),
+}
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3001',
+    'http://127.0.0.1:3001',
+    'http://localhost:3000 ',
+    'http://127.0.0.1:3000',
+]
